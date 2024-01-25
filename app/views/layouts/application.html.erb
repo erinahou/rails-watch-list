@@ -11,7 +11,14 @@
   </head>
 
   <body>
-    <%= link_to "Back to all lists", root_path %>
+    <!-- Nav bar -->
+    <nav class="navbar-lewagon bg_body-tertiary">
+      <div class="container">
+        <%= link_to root_path do %>
+          <%= image_tag "logo.png", alt: "Le Wagon", width: 200 %>
+        <% end %>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
